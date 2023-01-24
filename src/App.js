@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Saludos from './components/Saludos';
+import Ejercicio from './components/Ejercicio';
+import Tareas from './components/tareas';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Primeros pasos con React</h1>
+      <h2>Me llamo Daniel Trejo</h2>
+      <Saludos nombre = "Daniel" apellido ="Posligua"/>
+      <Ejercicio nombre = "Steffano" edad = "18" pasatiempo = "escuchar musica"/>
+      <Tareas/>
+
     </div>
   );
 }
